@@ -1,17 +1,15 @@
-import 'package:shelf/shelf.dart';
-import 'package:shelf/shelf_io.dart' as shelf_io;
+import 'dart:io';
 
+import 'package:shelf/shelf.dart' as shelf;
+import 'package:shelf/shelf_io.dart' as io;
+import 'package:shelf_hotreload/shelf_hotreload.dart';
+
+// Run this app with --enable-vm-service (or use debug run)
 void main() async {
-  var handler =
-      const Pipeline().addMiddleware(logRequests()).addHandler(_echoRequest);
-
-  var server = await shelf_io.serve(handler, 'localhost', 8080);
-
-  // Enable content compression
-  server.autoCompress = true;
-
-  print('Serving at http://${server.address.host}:${server.port}');
+  withHotreload(() => createServer());
 }
 
-Response _echoRequest(Request request) =>
-    Response.ok('Request for "${request.url}"');
+Future<HttpServer> createServer() {
+  handler(shelf.Request request) => shelf.Response.ok('hot!!');
+  return io.serve(handler, 'localhost', 8080);
+}

@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  hotreloader:
+    dependency: "direct dev"
+    description:
+      name: hotreloader
+      sha256: "66b78edf340352fcdd2043ab6116e58ec018c5968cab6485cde0f1769d28e0b8"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.0.5"
   http_parser:
     dependency: transitive
     description:
@@ -99,6 +107,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.1"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      sha256: "04094f2eb032cbb06c6f6e8d3607edcfcb0455e2bb6cbc010cb01171dcb64e6d"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.1.1"
   matcher:
     dependency: transitive
     description:
@@ -139,6 +155,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.4.0"
+  shelf_hotreload:
+    dependency: "direct main"
+    description:
+      name: shelf_hotreload
+      sha256: "5e7a68273d64a095384325d769c6a4885ea15c6aafee361098c0d8a5ecb5dcf6"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.4.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -168,6 +192,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.1"
+  stream_transform:
+    dependency: transitive
+    description:
+      name: stream_transform
+      sha256: "14a00e794c7c11aa145a170587321aedce29769c08d7f58b1d141da75e3b1c6f"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.0"
   string_scanner:
     dependency: transitive
     description:
@@ -208,5 +240,21 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.4"
+  vm_service:
+    dependency: transitive
+    description:
+      name: vm_service
+      sha256: e7fb6c2282f7631712b69c19d1bff82f3767eea33a2321c14fa59ad67ea391c7
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "9.4.0"
+  watcher:
+    dependency: transitive
+    description:
+      name: watcher
+      sha256: "6a7f46926b01ce81bfc339da6a7f20afbe7733eff9846f6d6a5466aa4c6667c0"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.2"
 sdks:
   dart: ">=2.19.2 <3.0.0"

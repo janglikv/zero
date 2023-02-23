@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CupertinoApp(
-      theme: CupertinoThemeData(primaryColor: Colors.grey),
+      theme: CupertinoThemeData(
+          primaryColor: Colors.grey,
+          textTheme: CupertinoTextThemeData(
+            textStyle: TextStyle(fontSize: 14, color: Colors.black),
+          )),
       home: ConnectPage(),
     );
   }
